@@ -6,6 +6,43 @@ const int nMin = 1;
 const int Kmax = 50;
 const int Kmin = 20;
 const int Tmin = 0;
+
+
+
+
+void Solution(int N, int M, int K, int indCnt, int MaxCount, int index, int Data[])
+{
+	for (int i = 1; i <= N; i++)
+    {
+		cout << "Row: " << i << " " << endl; 
+        for (int j = 1; j <= M; j++)
+        {
+			cout << "   " << j << ". Temperature : ";
+			while(!(cin >> Data[j]) || Data[j] < Tmin || Data[j] > Kmax)
+			{
+				cout << "   Error! give me a number between "<< Tmin  << " and " << Kmax << " : ";
+				cin.clear();
+				cin.ignore(1000,'\n');
+			}
+		}
+        for (int k = 1; k<=M; k++)
+        {
+            indCnt = 0;
+            int m = k;
+            while (Data[m] > K)
+            {
+                indCnt++;
+                m++;
+            }
+            if (MaxCount < indCnt)
+            {
+                MaxCount = indCnt;
+                index = i;
+            }
+
+        }
+	}
+}
 int main()
 {
 	//Declarations
@@ -38,41 +75,10 @@ int main()
 	}
     int n = ((N+1) * (M+1));
     int Data[n];  //declared this late becuse we need M*N times elements in the array, and for that we need M and N given in from the user side
-   
-
-	//Temperature inputs and algorithm implementation 
-	for (int i = 1; i <= N; i++)
-    {
-		cout << "Row: " << i << " " << endl; 
-        for (int j = 1; j <= M; j++)
-        {
-			cout << "   " << j << ". Temperature : ";
-			while(!(cin >> Data[j]) || Data[j] < Tmin || Data[j] > Kmax)
-			{
-				cout << "   Error! give me a number between "<< Tmin  << " and " << Kmax << " : ";
-				cin.clear();
-				cin.ignore(1000,'\n');
-			}
-		}
-        for (int k = 1; k<=M; k++)
-        {
-            indCnt = 0;
-            int m = k;
-            while (Data[m] > K)
-            {
-                indCnt++;
-                m++;
-            }
-            if (MaxCount < indCnt)
-            {
-                MaxCount = indCnt;
-                index = i;
-            }
-
-        }
-
-    }
-
+	
+	Solution(N, M, K, indCnt, MaxCount, index, &Data[n]);
+	
+	
 	///Output 
 	cerr << endl;
 	cerr << endl;
