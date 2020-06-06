@@ -14,10 +14,10 @@ void Solution(int N, int M, int K, int indCnt, int MaxCount, int index, int Data
 {
 	for (int i = 1; i <= N; i++)
     {
-		cout << "Row: " << i << " " << endl; 
+		cout << i << ". Settlement: " << endl; 
         for (int j = 1; j <= M; j++)
         {
-			cout << "   " << j << ". Temperature : ";
+			cout << "   " << j << ". Day's Temperature : ";
 			while(!(cin >> Data[j]) || Data[j] < Tmin || Data[j] > Kmax)
 			{
 				cout << "   Error! give me a number between "<< Tmin  << " and " << Kmax << " : ";
