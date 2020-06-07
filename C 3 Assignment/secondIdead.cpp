@@ -90,7 +90,6 @@ int main()
 	
 	//Inputs
 	inputs(N, M, K);
-	clog << N << " " << M << " " << K << endl; 
     int n = ((N+1) * (M+1));
 	int Data[n];  
 	
@@ -102,11 +101,3 @@ int main()
     return 0;
 
 }
-
-
-
-
-
-
-
-
