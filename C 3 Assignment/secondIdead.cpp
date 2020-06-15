@@ -70,7 +70,7 @@ void Solution(int &N, int &M, int &K, int &indCnt, int &MaxCount, int &index, in
 }
 
 
-outputs(int &index) 
+void outputs(int &index) 
 {
 	clog << endl;
    	clog << "OutPuts" << endl;
@@ -90,7 +90,7 @@ int main()
 	
 	//Inputs
 	inputs(N, M, K);
-    int n = ((N+1) * (M+1));
+    int const n = ((N+1) * (M+1));
 	int Data[n];  
 	
 	//algorithm implemention
