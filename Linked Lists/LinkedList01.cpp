@@ -57,7 +57,23 @@ void reverse(Node * l_list){
     
 }
 
+/*
+ * Steps to check if a given linked list is a palindorme or not
+ * 1) Get the middle of the linked list.
+ * 2) Reverse the second half of the linked list.
+ * 3) Check if the first half and second half are identical.
+ * 4) Construct the original linked list by reversing the second half again and attaching it back to the first half
+ */
 
+
+///=> This is not a good solution, obviously! 
+
+/*Another way*/
+/*
+ * 1) Iterate through the whole list and put each an every node into the stack
+ * 2) Then iterate again trough the list (this time poping an element from the stack) and comparing it with each node
+ * 3) If every element is of the list is equal every element of the sack (LIFO=> :) ) then the list is a palindrome
+ */
 
 
 
