@@ -107,6 +107,10 @@ void searchPush_back(Node *l_list, int inp_data){
 /*Printing the linked list*/
 void print(){
     Node *itr = Head;
+    if(itr == NULL){
+        cout << "EMPTY LIST";
+        return;
+    }
     cout << "This is your list: ";
     while(itr != NULL){
         cout << itr->data << " | ";
