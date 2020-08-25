@@ -2,8 +2,13 @@
 #include <cstdlib> /*This includes the rand() and srand() functions*/
 #include <ctime> /*This includes the time() functions*/
 #include <limits.h> /*This includes INT_MAX and stuff*/
-#include <Windows.h> /*This includes Sleep()*/
 #include <string.h>
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
 
 
 /*
@@ -82,14 +87,14 @@ int main(){
             cout << PlatForm[i] << " | ";
         }
         cout<<endl;
-        Sleep(1000);
+        //sleep(1000);
         randomizing(PlatForm);
         cout << "Randomizing..." <<endl;
-        Sleep(sleep_time);
+        //sleep(sleep_time);
         cout << "***************( Find QUEEN )***************"<<endl;; 
-        Sleep(1000);
+        //sleep(1000);
         cout << "\t\t# | # | # |" << endl;
-        Sleep(500);
+        //sleep(500);
         cout << endl;
         cout << "Enter the position of QUEEN: \t#";
         do {
