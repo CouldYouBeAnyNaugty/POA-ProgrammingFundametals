@@ -5,16 +5,16 @@
 
 # Installation
 - clone this repo by typing the following command in the terminal.
-```git clone https://github.com/izitPro/ProgFundamentals.git
+```git clone https://github.com/izitPro/ProgFundamentals.git```
 
 - change direcotory to ProgFundamentals/QJK_Randomization_Game by typing in the following command
-```cd ProgFundamentals/QJK_Randomization_Game
+```cd ProgFundamentals/QJK_Randomization_Game```
 
 - Type in the following command to compile the game
-```make
+```make```
 
 - Type in the following command to run the game
-```./main
+```./main```
 
 # How to play
 - Follow the on-screen instruction
