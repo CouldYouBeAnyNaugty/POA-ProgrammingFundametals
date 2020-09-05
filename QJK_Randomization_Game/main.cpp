@@ -3,11 +3,9 @@
 #include <ctime> /*This includes the time() functions*/
 #include <limits.h> /*This includes INT_MAX and stuff*/
 #include <string.h>
-#ifdef _WIN32
-#include <Windows.h>
-#else
+#include <windows.h>
 #include <unistd.h>
-#endif
+
 
 
 
@@ -87,14 +85,14 @@ int main(){
             cout << PlatForm[i] << " | ";
         }
         cout<<endl;
-        //sleep(1000);
+        sleep(1);
         randomizing(PlatForm);
         cout << "Randomizing..." <<endl;
-        //sleep(sleep_time);
+        sleep(1.5);
         cout << "***************( Find QUEEN )***************"<<endl;; 
-        //sleep(1000);
+        sleep(0.5);    
         cout << "\t\t# | # | # |" << endl;
-        //sleep(500);
+        sleep(0.5);
         cout << endl;
         cout << "Enter the position of QUEEN: \t#";
         do {
