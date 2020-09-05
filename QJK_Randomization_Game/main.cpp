@@ -78,6 +78,7 @@ int main(){
     
     int retry;
     do{
+        system("cls");
         cout << "\n\n\n";
         cout << "*************( First Order )***************"<<endl;; 
         cout << "\t\t";
@@ -87,8 +88,10 @@ int main(){
         cout<<endl;
         sleep(1);
         randomizing(PlatForm);
+        system("cls");
         cout << "Randomizing..." <<endl;
         sleep(1.5);
+        system("cls");
         cout << "***************( Find QUEEN )***************"<<endl;; 
         sleep(0.5);    
         cout << "\t\t# | # | # |" << endl;
@@ -132,7 +135,7 @@ int main(){
             cout << "Total Cash lost in this round: $" << betting_cash << endl;
             cout << "Total Cash in hand: $" << starting_cash << endl;
         }
-        cout << "Do you wan to play again?? ENTER 0 for yes or 1 for no:\t#";
+        cout << "Do you want to play again?? ENTER 0 for yes or 1 for no:\t#";
         do {
             while (!(cin >> retry)){
                 cout << "   ERROR!! please Enter a number:\t#";
