@@ -1,0 +1,28 @@
+									C++ vectors 
+NOTE: Vector is a class in C++ (like normal class with some fields and methods and a normal constructor)
+
+Constructor: create vectors and initialize them with some data
+Operators: ->assing, ->compare, ->access
+Deconstructor: delets the vector(called automatically in C++)
+
+1. .assing(): A method which is used to assign certain data to the vector
+2. .at(): returns an element of the vector at certain index "i"
+3. .back(): returns a reference to the last element of a vector
+4. .front(): returns a reference to the first element of a vector
+5. .capacity(): returns the number of elements a vector can hold
+6. .clear(): removes all the elements from the vector;
+7. .begin(): returns an iterator to the beginning of a vector
+8. .end(): returns an iterator to the end of a vector
+	Example => for(i = v.begin(); i != v.end(); i++){ // do some stuff }
+	.rbegin() returns a reverse iterator to the end of a vector
+	.rend)() returns a reverse iterator to the end of a vector
+9. .empty(): returns true of there is no element in a vector, otherwise false
+10. .insert(): inserts element to a vector
+11. .max_size(): returns the maximum number of elements a vector can hold 
+12. .pop_back(): removes the last element of a vector
+13. .push_back(): at an element to the end of a vector
+14. .reserve(): sets the minimum capacity of a vector
+15. .size(): returns the size of a vector
+16. .swap(): swaps the elements of two vectors (to and from)
+
+	
