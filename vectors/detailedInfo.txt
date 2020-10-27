@@ -25,4 +25,31 @@ Deconstructor: delets the vector(called automatically in C++)
 15. .size(): returns the size of a vector
 16. .swap(): swaps the elements of two vectors (to and from)
 
+
+Some of the methods written above are fairly straight forward, but some are not. 
+insert();
+If you are looking for better time complexity, this might not be the right choice for you.
+This is due to the fact that inserting an element to an array means moving all the elements to the right from that location must shifted one unit right, which takes linear time. 
+So better use Linked lists, in which we can insert elements quite easily.
+Any way, here are the three different overloading of the method:
+1.	iterator insert(iterator loc, const TYPE& val);
+ >this method takes a vector::iterator and a refernced const value of anytype. 
+ >it returns an iterator to the location where it inserted the value.
+ 
+ ..inserts the value in the location and boom
+ 
+2.  void insert(iterator loc, size_t num, const TYPE& val);
+ >this overload takes a vector::iterator, a positve number, and a referenced value of any type
+ >it returns nothing.
+ 
+ ..inserts "number" copies of the value in the given locaotion and boom
+
+3. 	void insert(iterator loc, input_iterator start, input_iterator end);
+ >this overload takes a vector::iterator, and other two vector::iterators from the array or a verctor from which we are reading the values
+ >it returns nothing.
+ 
+ ..inserts some values from another vector into the given vector starting form the given start iterator and ending on the given end iterator. 
+	
+
+
 	
